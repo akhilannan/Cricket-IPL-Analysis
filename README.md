@@ -1,8 +1,8 @@
 # Introduction
-This repo contains Databricks Notebook and Power BI report which helps to analyze the [Indian Premier League (IPL)](https://en.wikipedia.org/wiki/Indian_Premier_League) data. This data is based on the ball-by-ball IPL json data available in [Cricsheet.org](https://cricsheet.org/matches/).
+This repo provides a Databricks Notebook and a Power BI report for analyzing the data from the [Indian Premier League (IPL)](https://en.wikipedia.org/wiki/Indian_Premier_League), a professional cricket league in India. The data source is the [Cricsheet.org](https://cricsheet.org/matches/) website, which offers ball-by-ball IPL json data.
 
-# Cricket IPL ELT Databricks
-The notebook does the ELT process in Databricks, which downloads the IPL data from Cricsheet.org and build the facts and dims, leveraging [Medallion Architecture](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion). It can be executed in [Databricks Community Edition](https://docs.databricks.com/getting-started/community-edition.html).
+# Data Extraction, Loading and Transformation (ELT) with Databricks
+The *Cricket IPL ELT Databricks* notebook performs the ELT process using Databricks, which fetches the IPL data from Cricsheet.org and creates the facts and dimensions tables based on the [Medallion Architecture](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/medallion), a best practice for building a lakehouse. You can run the notebook in [Databricks Community Edition](https://docs.databricks.com/getting-started/community-edition.html), a free version of Databricks.
 
-# Cricket IPL Analysis
-This contains the pbit file with Power BI visualization based on the curated data build from Databricks. Pass the Databricks Cluster ID and Workspace ID (found in URL) as parameter values for refreshing the report, after the notebook is executed in Databricks. The final report is also available [here](https://app.powerbi.com/view?r=eyJrIjoiNzEwNTEzNzktNDVkZS00YmQ2LTlkYWEtNTE4ZmQ2ZWRmMDFkIiwidCI6IjgxNDQwMDExLTVhZTQtNDhmNy1hY2YwLTg2ZjBkNWQ2YTFlMiJ9).
+# Data Visualization with Power BI
+This repo also includes a *Cricket IPL Analysis.pbit* file that contains a Power BI report for visualizing the curated data from Databricks. To refresh the report, you need to enter the Databricks Cluster ID and Workspace ID (which you can find in the Databricks Cluster URL) as parameters after running the notebook in Databricks. You can also view the final report [here](https://app.powerbi.com/view?r=eyJrIjoiNzEwNTEzNzktNDVkZS00YmQ2LTlkYWEtNTE4ZmQ2ZWRmMDFkIiwidCI6IjgxNDQwMDExLTVhZTQtNDhmNy1hY2YwLTg2ZjBkNWQ2YTFlMiJ9).
